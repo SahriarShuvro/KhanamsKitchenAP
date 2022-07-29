@@ -1209,7 +1209,7 @@
             width: 600px;
             text-align: center;
             padding: 10px 0;
-            border: none;
+            border: none !important;
             margin: 0;
         }
         
@@ -1219,6 +1219,11 @@
         
         .sing-grupe input {
             margin-bottom: 0 !important;
+            width: 600px;
+            text-align: center;
+            padding: 10px 0;
+            border: none;
+            margin: 0;
         }
         
         .sing-grupe p,
