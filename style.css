@@ -46,7 +46,6 @@
         .call-sing-in {
             display: flex;
             justify-content: space-between;
-            width: 240px;
             height: auto;
             text-align: center;
             align-items: center;
@@ -57,6 +56,7 @@
         
         .call {
             font-size: 12px;
+            padding: 0 15px;
         }
         
         .call a {
@@ -64,6 +64,82 @@
             color: #ff5100;
         }
         /* Sing Up  */
+        
+        .sing-log-pro {
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            align-items: center;
+        }
+        
+        .d-profile {
+            display: flex;
+            justify-content: right;
+        }
+        
+        .d-profile a {
+            color: #656d78;
+            text-decoration: none;
+            border-radius: 3px;
+            border-radius: 50%;
+            background: #f1f1f1;
+            box-shadow: 5px 5px 5px #d2d2d2, -5px -5px 5px #ffffff;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+        
+        .d-profile a:hover {
+            box-shadow: none;
+            color: #ff5100;
+        }
+        
+        .d-profile a:hover {
+            box-shadow: none;
+            color: #ff5100;
+        }
+        
+        .d-profile a i {
+            font-size: 13px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .d-log-out {
+            display: flex;
+            justify-content: right;
+        }
+        
+        .d-log-out a {
+            color: #656d78;
+            text-decoration: none;
+            border-radius: 3px;
+            border-radius: 50%;
+            background: #f1f1f1;
+            box-shadow: 5px 5px 5px #d2d2d2, -5px -5px 5px #ffffff;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+        
+        .d-log-out a:hover {
+            box-shadow: none;
+            color: #ff5100;
+        }
+        
+        .d-log-out a i {
+            font-size: 13px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .sing-in {
+            width: 100%;
+        }
         
         .sing-in a {
             font-size: 14px;
@@ -87,7 +163,7 @@
         
         .sing-in a:hover {
             background: #f1f1f1;
-            color: #656d78;
+            color: #ff5100;
             box-shadow: none;
             transition-duration: 0.7s;
         }
@@ -1209,7 +1285,7 @@
             width: 600px;
             text-align: center;
             padding: 10px 0;
-            border: none !important;
+            border: none;
             margin: 0;
         }
         
@@ -1632,52 +1708,6 @@
             font-family: 'Exo 2', sans-serif !important;
         }
         
-        .d-log-out a {
-            padding: 20px;
-            text-decoration: none;
-            border-radius: 3px;
-            border-radius: 1px;
-            background: #f1f1f1;
-            box-shadow: 5px 5px 5px #d2d2d2, -5px -5px 5px #ffffff;
-            transition: 0.7s;
-            -webkit-transition: 0.7s;
-            -moz-transition: 0.7s;
-            -ms-transition: 0.7s;
-            -o-transition: 0.7s;
-        }
-        
-        .d-log-out a:hover {
-            box-shadow: none;
-        }
-        
-        .d-log-out a i {
-            font-size: 20px;
-            color: #ff5100;
-            padding: 10px;
-            transition: 0.7s;
-            -webkit-transition: 0.7s;
-            -moz-transition: 0.7s;
-            -ms-transition: 0.7s;
-            -o-transition: 0.7s;
-            box-shadow: none;
-        }
-        
-        .d-log-out a i:hover {
-            background: #f1f1f1;
-            box-shadow: 5px 5px 5px #d2d2d2, -5px -5px 5px #ffffff;
-            transition: 0.7s;
-            -webkit-transition: 0.7s;
-            -moz-transition: 0.7s;
-            -ms-transition: 0.7s;
-            -o-transition: 0.7s;
-        }
-        
-        .d-log-out {
-            width: 100%;
-            display: flex;
-            justify-content: right;
-        }
-        
         .date-p {
             background: #fff;
             cursor: pointer;
@@ -1834,11 +1864,6 @@
         
         .dinner-check {
             margin: 30px 0;
-        }
-        
-        .fa-solid,
-        .fas {
-            color: #ff5100;
         }
         
         .control-group {
@@ -2417,9 +2442,6 @@
                 background: #fff;
                 top: 0;
                 z-index: 1;
-            }
-            .call-sing-in {
-                display: none;
             }
             .mob-icon {
                 display: none;
