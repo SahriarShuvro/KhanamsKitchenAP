@@ -1626,7 +1626,7 @@
             justify-content: center;
             margin: auto;
             padding: 30px 0;
-            padding-left: 10px;
+            padding-left: 30px;
         }
         
         .dash-sub-menu a {
@@ -2672,7 +2672,7 @@
                 justify-content: center;
                 margin: auto;
                 padding: 30px 0;
-                padding-left: 30px;
+                padding-left: 10px;
             }
             .check-d-c {
                 width: 50%;
