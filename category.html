@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category | Manage Meal</title>
+    <link rel="icon" href=" img/logo.jpg" type="image/png/gif" style="border-radius: 50% ;">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <header class="main-container" id="sticky-header">
+        <div class="container" id="cntn-js">
+            <!-- Logo -->
+            <div class="logo-sec">
+                <a href="#" class="logo">
+                    <img src=" img/logo.jpg" alt="Khanam's Kitchen" srcset="">
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <!-- Call & Sing In Section  -->
+            <div class="call-sing-in">
+                <!-- Sing is Section  -->
+                <div class="sing-log-pro">
+                    <div class="sing-in" id="sing-in">
+                        <nav href="" class="sing-in-btn">
+                            <span>Admin's Name</span>
+                        </nav>
+
+                    </div>
+                    <div class="d-log-out" style="display: none;">
+                        <a href="signIn.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    <div class="d-profile" style="display: none;">
+                        <a href=" dashbord.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- admin menu start  -->
+    <div class="aa-m">
+        <div class="aa0m">
+            <div class="ad-drop" id="adDrop">
+                <a href="">Go to Main Site</a>
+                <a href="">Log out</a>
+            </div>
+        </div>
+    </div>
+    <!-- admin menu start  -->
+    <!-- Content Section start  -->
+    <div class="cntn-se">
+        <div class="menubar" id="menubar">
+            <a href="index.html">Dashboard</a>
+            <div id="menuB">
+                <div id="d-menu">Menu</div>
+                <nav class="d-menu">
+                    <nav id="menuBarActive">
+                        <ul class="tabs">
+                            <li class="tab is-active">
+                                <a data-switcher data-tab="1" href="./add.html">Add</a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="2" href="./browseall.html">Browse All</a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="3" href="./category.html">Category</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+            <a href="coustomer.html">Coustomer</a>
+            <a href="order.html">Order</a>
+        </div>
+        <div class="mein-cntn" id="mainCntn">
+            <!-- Category List Start -->
+            <div class="ctg-secOne">
+                <header>
+                    <h3><b><u>Manage Meal</u></b></h3>
+                </header>
+                <div class="hr"></div>
+                <div class="panel-body">
+                    <div class="adv-table">
+                        <form method="GET" action="#" class="clForm">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" name="search_info" class="form-control" value="" placeholder="Search Meal Parent Category name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <select name="popular" class="form-control">
+                                        <option value="">Popular : All</option>
+                                        <option value="no">No</option>
+                                        <option value="yes">Yes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                                <button class="btn btn-default" type="submit" name="search" value="1">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th width="5%">SL#</th>
+                                    <th class="text-center" width="20%">Image</th>
+                                    <th class="text-center" width="">Category Name</th>
+                                    <th class="text-center" width="10%">Popular</th>
+                                    <th class="text-center" width="10%">Status</th>
+                                    <th class="text-center" width="10%">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr class="gradeX">
+                                    <td>
+                                        <a title="Burger" href="#">1</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <img src="./img/logo.jpg" class="img-rounded thumb" height="50">
+                                    </td>
+                                    <td>
+                                        <a style="color: #000" title="Student Meal" href="#">Student Package1</a>
+                                    </td>
+                                    <td class="text-center"><span class="label label-success">Yes</span></td>
+                                    <td class="text-center"><span class="label label-success">Active</span></td>
+                                    <td class="text-center">
+                                        <a class="btn btn-primary btn-xs " href="#"><i class="fa fa-edit"></i></a>
+                                        <!--<a class="btn btn-danger btn-xs" onclick="return confirm('Are you Sure??\nYou Want to Delete this item!');" href=""><i class="fa fa-trash"></i></a>-->
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                            <tbody class="">
+                                <tr class="gradeX">
+                                    <td>
+                                        <a title="Burger" href="#">1</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <img src="./img/logo.jpg" class="img-rounded thumb" height="50">
+                                    </td>
+                                    <td>
+                                        <a style="color: #000" title="Student Meal" href="#">Student Package1</a>
+                                    </td>
+                                    <td class="text-center"><span class="label label-success">Yes</span></td>
+                                    <td class="text-center"><span class="label label-success">Active</span></td>
+                                    <td class="text-center">
+                                        <a class="btn btn-primary btn-xs " href="#"><i class="fa fa-edit"></i></a>
+                                        <!--<a class="btn btn-danger btn-xs" onclick="return confirm('Are you Sure??\nYou Want to Delete this item!');" href=""><i class="fa fa-trash"></i></a>-->
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                            <tbody class="">
+                                <tr class="gradeX">
+                                    <td>
+                                        <a title="Burger" href="#">1</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <img src="./img/logo.jpg" class="img-rounded thumb" height="50">
+                                    </td>
+                                    <td>
+                                        <a style="color: #000" title="Student Meal" href="#">Student Package1</a>
+                                    </td>
+                                    <td class="text-center"><span class="label label-success">Yes</span></td>
+                                    <td class="text-center"><span class="label label-success">Active</span></td>
+                                    <td class="text-center">
+                                        <a class="btn btn-primary btn-xs " href="#"><i class="fa fa-edit"></i></a>
+                                        <!--<a class="btn btn-danger btn-xs" onclick="return confirm('Are you Sure??\nYou Want to Delete this item!');" href=""><i class="fa fa-trash"></i></a>-->
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                            <tbody class="">
+                                <tr class="gradeX">
+                                    <td>
+                                        <a title="Burger" href="#">1</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <img src="./img/logo.jpg" class="img-rounded thumb" height="50">
+                                    </td>
+                                    <td>
+                                        <a style="color: #000" title="Student Meal" href="#">Student Package1</a>
+                                    </td>
+                                    <td class="text-center"><span class="label label-success">Yes</span></td>
+                                    <td class="text-center"><span class="label label-success">Active</span></td>
+                                    <td class="text-center">
+                                        <a class="btn btn-primary btn-xs " href="#"><i class="fa fa-edit"></i></a>
+                                        <!--<a class="btn btn-danger btn-xs" onclick="return confirm('Are you Sure??\nYou Want to Delete this item!');" href=""><i class="fa fa-trash"></i></a>-->
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                            <tbody class="">
+                                <tr class="gradeX">
+                                    <td>
+                                        <a title="Burger" href="#">1</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <img src="./img/logo.jpg" class="img-rounded thumb" height="50">
+                                    </td>
+                                    <td>
+                                        <a style="color: #000" title="Student Meal" href="#">Student Package1</a>
+                                    </td>
+                                    <td class="text-center"><span class="label label-success">Yes</span></td>
+                                    <td class="text-center"><span class="label label-success">Active</span></td>
+                                    <td class="text-center">
+                                        <a class="btn btn-primary btn-xs " href="#"><i class="fa fa-edit"></i></a>
+                                        <!--<a class="btn btn-danger btn-xs" onclick="return confirm('Are you Sure??\nYou Want to Delete this item!');" href=""><i class="fa fa-trash"></i></a>-->
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="pull-right">
+                            <ul class="pagination">
+                                <li class="active"><a href="javascript:void(0)">1</a></li>
+                                <li><a href="#" data-ci-pagination-page="2">2</a></li>
+                                <li><a href="#" data-ci-pagination-page="3">3</a></li>
+                                <li><a href="#" data-ci-pagination-page="4">4</a></li>
+                                <li><a href="#" data-ci-pagination-page="2" rel="next">Next ›</a></li>
+                                <li><a href="#" data-ci-pagination-page="15">Last »</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Category List End  -->
+
+            <!-- Add Category Start  -->
+            <div class="col-lg-5">
+                <section class="panel" style="font-family: 'Source Sans Pro', sans-serif;">
+                    <header class="panel-heading">
+                        <b style="color: #3d2516"><u>Add Meal Category</u></b>
+                    </header>
+                    <div class="panel-body">
+
+
+                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group f-g-title">
+                                <label class="col-lg-4 col-sm-4 control-label">Category Name </label>
+                                <div class="col-lg-8">
+                                    <input type="text" name="category" value="" placeholder="Category Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group popular-r">
+                                <label class="control-label col-md-4">Popular</label>
+                                <div class="col-lg-8">
+                                    <label class="checkbox-inline">
+                                        <input type="radio" checked="checked" name="popular" value="no"> No
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="popular" value="yes"> Yes
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Image<span class="req">*</span></label>
+                                <div class="col-md-10">
+                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                                        <div class="m-preview">
+                                            <div class="preview" style="width: 200px; height: 150px;">
+                                                <img id="file-ip-1-preview" src="./img/logo.jpg">
+                                            </div>
+                                            <div class="all-e">
+                                                <div class="e-all">
+                                                    <label for="file-ip-1"><i class="fa fa-paper-clip"></i> Select Image</label>
+                                                    <input type="file" id="file-ip-1" class="default" accept="image/*" onchange="showPreview(event);" hidden>
+                                                    <br>
+                                                    <span class="label label-danger">NOTE!</span>
+                                                    <br>
+                                                    <span style="font-size: 11px;font-weight: bold;color: #838080;"> Please choose image size 2560 x 1440
+                                                        pixels.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <span class="btn btn-white btn-file">
+                                            <span class="fileupload-exists">
+                                                <i class="fa fa-undo"></i> Change
+                                            </span>
+                                        </span>
+                                        <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">
+                                            <i class="fa fa-trash">
+                                            </i> Remove
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group form-group-2">
+                                <label class="control-label col-md-4">Status</label>
+                                <div class="col-lg-8">
+                                    <label class="checkbox-inline">
+                                        <input type="radio" checked="checked" name="status" value="active"> Active
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="status" value="inactive"> Inactive
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-4 col-lg-8">
+                                    <button type="submit" class="btn btn-primary" name="submit" value="1">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <!-- Add Category Start  -->
+
+        </div>
+    </div>
+    <!-- Content Section end -->
+
+
+
+    <!-- Footer Section Start  -->
+    <div class="footer">
+        <div class="mainFooter">
+            <p>2022 © Khanam's Kitchens</p>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <script src="js/main.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>

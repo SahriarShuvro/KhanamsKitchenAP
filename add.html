@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Meal | Manage Meal</title>
+    <link rel="icon" href=" img/logo.jpg" type="image/png/gif" style="border-radius: 50% ;">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <header class="main-container" id="sticky-header">
+        <div class="container" id="cntn-js">
+            <!-- Logo -->
+            <div class="logo-sec">
+                <a href="#" class="logo">
+                    <img src=" img/logo.jpg" alt="Khanam's Kitchen" srcset="">
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <!-- Call & Sing In Section  -->
+            <div class="call-sing-in">
+                <!-- Sing is Section  -->
+                <div class="sing-log-pro">
+                    <div class="sing-in" id="sing-in">
+                        <nav href="" class="sing-in-btn">
+                            <span>Admin's Name</span>
+                        </nav>
+
+                    </div>
+                    <div class="d-log-out" style="display: none;">
+                        <a href="signIn.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    <div class="d-profile" style="display: none;">
+                        <a href=" dashbord.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- admin menu start  -->
+    <div class="aa-m">
+        <div class="aa0m">
+            <div class="ad-drop" id="adDrop">
+                <a href="">Go to Main Site</a>
+                <a href="">Log out</a>
+            </div>
+        </div>
+    </div>
+    <!-- admin menu start  -->
+    <!-- Content Section start  -->
+    <!-- Menu Section Start -->
+    <div class="cntn-se">
+        <div class="menubar" id="menubar">
+            <a href="index.html">Dashboard</a>
+            <div id="menuB">
+                <div id="d-menu">Menu</div>
+                <nav class="d-menu">
+                    <nav id="menuBarActive">
+                        <ul class="tabs">
+                            <li class="tab is-active">
+                                <a data-switcher data-tab="1" href="./add.html">Add</a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="2" href="./browseall.html">Browse All</a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="3" href="./category.html">Category</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+            <a href="coustomer.html">Coustomer</a>
+            <a href="order.html">Order</a>
+        </div>
+        <!-- Menu Section End -->
+        <!-- Cntn Section Start      -->
+        <section class="panel" style="width: 100%; font-family: 'Source Sans Pro', sans-serif;">
+            <header class="panel-heading">
+                <b style="color: #3d2516"><u>Add Food</u></b>
+            </header>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Meal Category<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-4">
+                            <select name="category_id" class="form-control smart_select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                <option value="" selected="selected">--Select--</option>
+                                <option value="1">Student Meal 1</option>
+                                <option value="2">Student Meal 2</option>
+                            </select>
+                            <!-- <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 401px;"><span class="selection"><span
+                                        class="select2-selection select2-selection--single" role="combobox"
+                                        aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                        aria-labelledby="select2-category_id-co-container"><span
+                                            class="select2-selection__rendered" id="select2-category_id-co-container"
+                                            title="--Select--">--Select--</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                            </span><span class="dropdown-wrapper" aria-hidden="true"></span>
+                        </span> -->
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group">
+
+
+                        <label class="col-lg-2 col-sm-2 control-label">Free Delivery<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="free_delivery" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="free_delivery" value="yes"> Yes
+                            </label>
+                        </div>
+                        <label class="col-lg-2 col-sm-2 control-label">Special Delivery Fee<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="special_delivery_fee" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="special_delivery_fee" value="yes"> Yes
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+
+                        <label class="col-lg-2 col-sm-2 control-label">Meal Name<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-6">
+                            <input type="text" name="title" value="" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Min Order Qty<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2 col-lg-2b">
+                            <input type="number" name="min_order_qty" value="1" required="" placeholder="Exam : 1,2" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Food Name in English<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-7">
+                            <input type="text" name="eng_title" value="" placeholder="English Name" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Description</label>
+                        <div class="col-lg-10">
+                            <textarea name="description" placeholder="Description" class="form-control" rows="6"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Price (like 100, 200 etc)<span class="req">*
+                            </span></label>
+                        <div class="col-lg-2">
+                            <input type="number" name="price" value="" placeholder="Price" class="form-control">
+                        </div>
+                        <label class="col-lg-2 col-sm-2 control-label">Have Discount?</label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="have_discount" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="have_discount" id="have_discount" value="yes"> Yes
+                            </label>
+                        </div>
+                        <label class="col-lg-2 col-sm-2 control-label">Discounted Price (like 100, 200
+                            etc)</label>
+                        <div class="col-lg-2">
+                            <input type="text" name="discount_price" id="discount_price" value="" placeholder="Discounted Price" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Offer<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="offer" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="offer" value="yes"> Yes
+                            </label>
+                        </div>
+
+                        <label class="col-lg-2 col-sm-2 control-label">Trending<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="trending" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="trending" value="yes"> Yes
+                            </label>
+                        </div>
+                        <label class="col-lg-2 col-sm-2 control-label">Is Featured?<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="is_featured" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="is_featured" value="yes"> Yes
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Top Meal<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="top_snacks" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="top_snacks" value="yes"> Yes
+                            </label>
+                        </div>
+                        <label class="col-lg-2 col-sm-2 control-label">Dynamic Home<span class="req"> *
+                            </span></label>
+                        <div class="col-lg-2">
+                            <label class="checkbox-inline">
+                                <input type="radio" checked="checked" name="dynamic_home" value="no"> No
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="radio" name="dynamic_home" value="yes"> Yes
+                            </label>
+                        </div>
+
+                        <label class="col-lg-2 col-sm-2 control-label">Expire Date</label>
+                        <div class="col-lg-2 col-lg-3b">
+                            <input type="date" name="expired_on" value="" placeholder="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Availabe Start Time</label>
+                        <div class="col-lg-4 col-lg-4b">
+                            <input type="time" name="start_time" value="" placeholder="" class="form-control">
+                        </div>
+                        <label class="col-lg-2 col-sm-2 control-label">Availabe End Time</label>
+                        <div class="col-lg-4 col-lg-4b">
+                            <input type="time" name="end_time" value="" placeholder="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Trending Start Time</label>
+                        <div class="col-lg-4 col-lg-4b">
+                            <input type="time" name="trending_start_time" value="" placeholder="" class="form-control">
+                        </div>
+                        <label class="col-lg-2 col-sm-2 control-label">Trending End Time</label>
+                        <div class="col-lg-4 col-lg-4b">
+                            <input type="time" name="trending_end_time" value="" placeholder="" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Food Image <span class="req">*</span></label>
+                        <div class="col-lg-4 col-4">
+                            <div class="m-preview">
+                                <div class="preview previwe-2" style="width: 200px; height: 150px;">
+                                    <img id="file-ip-1-preview" src="./img/logo.jpg">
+                                </div>
+                                <div class=" all-e-2">
+                                    <div class="e-all">
+                                        <label for="file-ip-1"><i class="fa fa-paper-clip"></i> Select Image</label>
+                                        <input type="file" id="file-ip-1" class="default" accept="image/*" onchange="showPreview(event);" hidden>
+                                        <br>
+                                        <span class="label label-danger">NOTE!</span>
+                                        <br>
+                                        <span style="font-size: 11px;font-weight: bold;color: #838080;"> Please choose image size 2560 x 1440
+                                            pixels.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Food Trending Image <span
+                                class="req">*</span></label>
+                        <div class="col-lg-4 col-4">
+                            <div class="m-preview">
+                                <div class="preview previwe-2" style="width: 200px; height: 150px;">
+                                    <img id="file-ip-2-preview" src="./img/logo.jpg">
+                                </div>
+                                <div class=" all-e-2">
+                                    <div class="e-all">
+                                        <label for="file-ip-2"><i class="fa fa-paper-clip"></i> Select Image</label>
+                                        <input type="file" id="file-ip-2" class="default" accept="image/*" onchange="showPreview2(event);" hidden>
+                                        <br>
+                                        <span class="label label-danger">NOTE!</span>
+                                        <br>
+                                        <span style="font-size: 11px;font-weight: bold;color: #838080;"> Please choose image size 2560 x 1440 pixels.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Default </label>
+                        <div class="row" style="width: 100%;">
+                            <div class="col-lg-2 col-2">
+                                <img style="width: 250px; height:150px;" src="./img/logo.jpg" class="img-thumbnail uth_profile_img donner-profile-thumb img-responsive" alt="Card image cap">
+                                <div>
+                                    <span><input type="radio" name="image_name" value=""></span> <span>Use This?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <button type="submit" class="btn btn-primary" name="submit" value="1">Save</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <!-- Cntn Section Edn     -->
+    </div>
+
+    <!-- Content Section end -->
+
+
+
+    <!-- Footer Section Start  -->
+    <div class="footer">
+        <div class="mainFooter">
+            <p>2022 © Khanam's Kitchens</p>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <script src="js/main.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>
