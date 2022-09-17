@@ -1381,7 +1381,6 @@ a {
 
 .cust thead tr th {
     padding: 20px 12px;
-    border: 1px solid green !important;
 }
 
 .rowGap {
@@ -1404,7 +1403,7 @@ a {
     width: 100%;
 }
 
-.tdRwo th:first-child {
+.cust thead tr th:first-child {
     border-radius: 10px 0 0 0;
     -webkit-border-radius: 10px 0 0 0;
     -moz-border-radius: 10px 0 0 0;
@@ -1412,7 +1411,7 @@ a {
     -o-border-radius: 10px 0 0 0;
 }
 
-.tdRwo th:last-child {
+.cust thead tr th:last-child {
     border-radius: 0 10px 0 0;
     -webkit-border-radius: 0 10px 0 0;
     -moz-border-radius: 0 10px 0 0;
@@ -1587,7 +1586,7 @@ main {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .container {
         width: 100%;
     }
@@ -1597,6 +1596,18 @@ main {
 }
 
 @media screen and (max-width: 900px) {
+    .mein-cntn {
+        display: flex !important;
+        flex-direction: column !important;
+        font-size: 12px;
+    }
+    .ctg-secOne {
+        width: 100%;
+        background: #fff;
+    }
+    .col-lg-5 {
+        width: 100%;
+    }
     .container {
         width: 100%;
     }
@@ -1651,5 +1662,12 @@ main {
     }
     .contentTop div {
         font-size: 13px;
+    }
+    .cust {
+        width: 100% !important;
+        font-size: 10px !important;
+    }
+    .cust thead tr th:first-child {
+        padding: 5px 0;
     }
 }
