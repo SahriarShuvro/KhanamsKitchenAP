@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Name | Manage Meal</title>
+    <link rel="icon" href=" img/logo.jpg" type="image/png/gif" style="border-radius: 50% ;">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+    <!-- Date Ranger Peeker  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <header class="main-container" id="sticky-header">
+        <div class="container" id="cntn-js">
+            <!-- Logo -->
+            <div class="logo-sec">
+                <a href="#" class="logo">
+                    <img src=" img/logo.jpg" alt="Khanam's Kitchen" srcset="">
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <!-- Call & Sing In Section  -->
+            <div class="call-sing-in">
+                <!-- Sing is Section  -->
+                <div class="sing-log-pro">
+                    <div class="sing-in" id="sing-in">
+                        <nav href="" class="sing-in-btn">
+                            <span>Admin's Name</span>
+                        </nav>
+                    </div>
+                    <div class="d-log-out" style="display: none;">
+                        <a href="signIn.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                    <div class="d-profile" style="display: none;">
+                        <a href=" dashbord.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- admin menu start  -->
+    <div class="aa-m">
+        <div class="aa0m">
+            <div class="ad-drop" id="adDrop">
+                <a href="">Go to Main Site</a>
+                <a href="">Log out</a>
+            </div>
+        </div>
+    </div>
+    <!-- admin menu start  -->
+    <!-- Content Section start  -->
+    <div class="cntn-se">
+        <div class="menubar" id="menubar">
+            <a href="index.html">Dashboard</a>
+            <div id="menuB">
+                <div id="d-menu">Menu</div>
+                <nav class="d-menu">
+                    <nav id="menuBarActive">
+                        <ul class="tabs ">
+                            <li class="tab is-active ">
+                                <a data-switcher=" " data-tab="1 " href="./add.html " style="background: #2e130d; ">Add</a>
+                            </li>
+                            <li class="tab ">
+                                <a data-switcher data-tab="2 " href="./browseall.html ">Browse All</a>
+                            </li>
+                            <li class=" tab ">
+                                <a data-switcher=" " data-tab=" 3 " href=" ./category.html ">Category</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+            <a href=" coustomer.html " style="background: #8d726c;">Coustomer</a>
+            <a href=" meal.html ">Meal</a>
+            <a href=" order.html ">Order</a>
+        </div>
+        <div class="mein-cntn " id="mainCntn ">
+            <!-- Heading Section Start -->
+            <button class="openD" id="epandDO">Expand Details</button>
+            <button class="clsD" id="epandDC">Close Details</button>
+            <div class="contentTop " id="expandID">
+                <div class="meal total-meal ">
+                    <i class="fa-solid fa-bowl-food total-meal"></i>
+                    <div class="lable ">
+                        <p>Total Meal</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-lunch ">
+                    <i class="fa-solid fa-sun meal-lunch"></i>
+                    <div class="lable ">
+                        <p>Lunch</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-dinner ">
+                    <i class="fa-regular fa-moon meal-dinner"></i>
+                    <div class="lable ">
+                        <p>Dinner</p>
+                        <p>100</p>
+                    </div>
+                </div>
+                <div class="meal meal-normal ">
+                    <i class="fa-solid fa-bowl-rice meal-normal"></i>
+                    <div class="lable ">
+                        <p>Normal Meal</p>
+                        <p>90</p>
+                    </div>
+                </div>
+                <div class="meal meal-special ">
+                    <i class="fa-solid  fa-drumstick-bite meal-special"></i>
+                    <div class="lable ">
+                        <p>Special Meal</p>
+                        <p>10</p>
+                    </div>
+                </div>
+                <div class="meal meal-Customized ">
+                    <i class="fa-solid fa-stroopwafel meal-Customized"></i>
+                    <div class="lable ">
+                        <p>Customized Meal</p>
+                        <p>100</p>
+                    </div>
+                </div>
+                <div class="meal meal-deposit ">
+                    <i class="fa-solid fa-stroopwafel meal-deposit"></i>
+                    <div class="lable ">
+                        <p>Deposit</p>
+                        <p>3000</p>
+                    </div>
+                </div>
+                <div class="meal meal-LMS ">
+                    <i class="fa-solid fa-stroopwafel meal-LMS"></i>
+                    <div class="lable ">
+                        <p>LMS</p>
+                        <p>-100</p>
+                    </div>
+                </div>
+                <div class="meal profit ">
+                    <i class="fa-solid fa-sack-dollar profit "></i>
+                    <div class="lable ">
+                        <p>Profit</p>
+                        <p>100</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Heading Section Start -->
+            <!-- Body Secetion start  -->
+            <div class="bodySectioS ">
+                <div class="b-tbl-s" id="dark">
+                    <div id="html2pdf" style="width: 100%;">
+                        <div class="filters">
+                            <div class="datepeeker">
+                                <input type="text" name="daterange" value=" " />
+                            </div>
+                            <div class="packageM">
+                                <select name="package" id="packageM">
+                                    <option value="" selected="selected">--Select Package--</option>
+                                    <option value="1">Student Meal 1</option>
+                                    <option value="2">Student Meal 2</option>
+                                </select>
+                            </div>
+                            <div class="menuM">
+                                <select name="package" id="packageM">
+                                    <option value="" selected="selected">--Lunch or Dinner--</option>
+                                    <option value="1">Lunch</option>
+                                    <option value="2">Dinner</option>
+                                </select>
+                            </div>
+                            <!-- <div class="search">
+                                <input type="search" name="search" id="searchMcu" placeholder="Search for Customers">
+                            </div> -->
+                            <div class="scrh" style="cursor: pointer;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="btnMeal">
+                                <button type="exportPDF" id="exportPDF">PDF</button>
+                            </div>
+                        </div>
+
+                        <table class="tblhead" id="">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Customer Info</th>
+                                    <th>Lunch</th>
+                                    <th>Dinner</th>
+                                    <th>SCVS</th>
+                                    <th>Extra SCVS</th>
+                                    <th>Total Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbodyC ">
+                                <tr>
+                                    <td class="name date">9/23/2022</td>
+                                    <td class="addr info ">
+                                        <p>Shuvro</p>
+                                        <p>01728723881</p>
+                                        <p>Beldarpara, Boalia Thana, Rajshahi</p>
+                                    </td>
+                                    <td class="phone l-Info ">
+                                        <p> <a href="#" class="mealOn">Normal</a></p>
+                                        <p> <a href="#" class="red">-Quantity: 2</a></p>
+                                        <p> <a href="" class="red">-Price: 42.5৳</a></p>
+                                    </td>
+                                    <td class="phone d-Info">
+                                        <p> <a href="#" class="mealOff">Special</a></p>
+                                        <p> <a href="#" class="red">-Quantity: 2</a></p>
+                                        <p> <a href="" class="red">-Price: 80৳</a></p>
+                                    </td>
+                                    <td class="mOO scvs ">
+                                        <p style="color: red; font-weight: bold;" class="scvsid">250৳</p>
+                                        <input class="inputValue" type="text" value="0" class="inputC"><br>
+                                        <input class="inputTxt" type="submit" value="Update" class="updateBTN">
+                                    </td>
+                                    <td class="mOO e-scvs">
+                                        <p style="color: red; font-weight: bold;" class="eSCVCid">00৳</p>
+                                        <input class="inputValue" type="text" value="0" class="inputEC"><br>
+                                        <input class="inputTxt" type="submit" value="Update" class="updateBTN2">
+                                    </td>
+                                    <td class="tMeal price ">
+                                        <p style="color: red; font-weight: bold;" class="price2">150৳</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body Secetion end -->
+        </div>
+    </div>
+    <!-- Content Section end -->
+    <!-- Footer Section Start  -->
+    <div class="footer ">
+        <div class="mainFooter ">
+            <p>2022 © Khanam's Kitchens</p>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+    <script src=" js/main.js "></script>
+    <script type="text/javascript">
+        {
+            $(function() {
+                $('input[name="daterange"]').daterangepicker({
+                    opens: 'left'
+                }, function(start, end, label) {
+                    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                });
+            });
+        }
+    </script>
+    <!-- <script>
+        let scvsid = document.querySelectorAll('scvsid')
+        let inputC = document.querySelectorAll('inputC')
+        let updateBTN = document.querySelectorAll('updateBTN')
+        let eSCVCid = document.querySelectorAll('eSCVCid')
+        let inputEC = document.querySelectorAll('inputEC')
+        let updateBTN2 = document.querySelectorAll('updateBTN2')
+
+        let btn = updateBTN.addEventListener('click', () => {
+            confirm("Are you sure, you want to change SCVC ? ")
+            scvsid.innerHTML = [inputC.value];
+        })
+        for (let i = 0; i > updateBTN.length; i++) {
+            return btn[i];
+        }
+        updateBTN2.addEventListener('click', () => {
+            confirm("Are you sure, you want to change ESCVC ? ")
+            eSCVCid.innerHTML = [inputC.value];
+        })
+    </script> -->
+</body>
+
+</html>

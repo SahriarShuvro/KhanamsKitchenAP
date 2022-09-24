@@ -84,7 +84,7 @@
             <a href="meal.html">Meal</a>
             <a href="order.html">Order</a>
         </div>
-        <div class="mein-cntn" id="mainCntn">
+        <div class="mein-cntn" id="mainCntn" style="display: flex; flex-direction: row;">
             <!-- Category List Start -->
             <div class="ctg-secOne">
                 <header>
@@ -102,9 +102,9 @@
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <select name="popular" class="form-control">
-                                        <option value="">Popular : All</option>
-                                        <option value="no">No</option>
-                                        <option value="yes">Yes</option>
+                                        <option value="">Meal Type : All</option>
+                                        <option value="no">Student Meal</option>
+                                        <option value="yes">Office Meal</option>
                                     </select>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                                     <th width="5%">SL#</th>
                                     <th class="text-center" width="20%">Image</th>
                                     <th class="text-center" width="">Category Name</th>
-                                    <th class="text-center" width="10%">Popular</th>
+                                    <th class="text-center" width="10%">Meal Type</th>
                                     <th class="text-center" width="10%">Status</th>
                                     <th class="text-center" width="10%">Action</th>
                                 </tr>
@@ -258,13 +258,13 @@
                                 </div>
                             </div>
                             <div class="form-group popular-r">
-                                <label class="control-label col-md-4">Popular</label>
+                                <label class="control-label col-md-4">Meal Type</label>
                                 <div class="col-lg-8">
                                     <label class="checkbox-inline">
-                                        <input type="radio" checked="checked" name="popular" value="no"> No
+                                        <input type="radio" checked="checked" name="popular" value="no" style="width: 13px;height: 20.3px;"> Sutdent Meal
                                     </label>
                                     <label class="checkbox-inline">
-                                        <input type="radio" name="popular" value="yes"> Yes
+                                        <input type="radio" name="popular" value="yes" style="width: 13px;height: 20.3px;"> Office Meal
                                     </label>
                                 </div>
                             </div>

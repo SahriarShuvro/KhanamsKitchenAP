@@ -86,28 +86,65 @@
         </div>
         <div class="mein-cntn " id="mainCntn ">
             <!-- Heading Section Start -->
-            <div class="contentTop">
-                <div class="coustomer">
-                    <i class="fa-solid fa-people-group coustomer"></i>
-                    <div class="lable">
-                        <p>Customers</p>
-                        <p>100</p>
-                    </div>
-                </div>
-                <div class="total-meal">
+            <button class="openD" id="epandDO">Expand Details</button>
+            <button class="clsD" id="epandDC">Close Details</button>
+            <div class="contentTop " id="expandID">
+                <div class="meal total-meal ">
                     <i class="fa-solid fa-bowl-food total-meal"></i>
-                    <div class="lable">
+                    <div class="lable ">
                         <p>Total Meal</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-lunch ">
+                    <i class="fa-solid fa-sun meal-lunch"></i>
+                    <div class="lable ">
+                        <p>Lunch</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-dinner ">
+                    <i class="fa-regular fa-moon meal-dinner"></i>
+                    <div class="lable ">
+                        <p>Dinner</p>
                         <p>100</p>
                     </div>
                 </div>
-                <div class="profit">
-                    <i class="fa-solid fa-sack-dollar profit"></i>
-                    <div class="lable">
-                        <p>Profit</p>
+                <div class="meal meal-normal ">
+                    <i class="fa-solid fa-bowl-rice meal-normal"></i>
+                    <div class="lable ">
+                        <p>Normal Meal</p>
+                        <p>90</p>
+                    </div>
+                </div>
+                <div class="meal meal-special ">
+                    <i class="fa-solid  fa-drumstick-bite meal-special"></i>
+                    <div class="lable ">
+                        <p>Special Meal</p>
+                        <p>10</p>
+                    </div>
+                </div>
+                <div class="meal meal-Customized ">
+                    <i class="fa-solid fa-stroopwafel meal-Customized"></i>
+                    <div class="lable ">
+                        <p>Customized Meal</p>
                         <p>100</p>
                     </div>
                 </div>
+                <!-- <div class="coustomer ">
+                                <i class="fa-solid fa-people-group coustomer"></i>
+                                <div class="lable ">
+                                    <p>Customers</p>
+                                    <p>100</p>
+                                </div>
+                            </div>
+                            <div class="profit ">
+                                <i class="fa-solid fa-sack-dollar profit "></i>
+                                <div class="lable ">
+                                    <p>Profit</p>
+                                    <p>100</p>
+                                </div>
+                            </div> -->
             </div>
             <!-- Heading Section Start -->
             <!-- Body Secetion start  -->
@@ -129,7 +166,7 @@
 
                         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
                             <div role="search" class="sbx-custom__wrapper">
-                                <input type="search" name="search" placeholder="Search for customers..." autocomplete="off" required="required" class="sbx-custom__input">
+                                <input type="search" name="search" placeholder="Search for customer..." autocomplete="off" required="required" class="sbx-custom__input">
                                 <button type="submit" title="Submit your search query." class="sbx-custom__submit">
                                     <svg role="img" aria-label="Search">
                                         <use xlink:href="#sbx-icon-search-18"></use>
@@ -147,316 +184,380 @@
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Neme</th>
+                                <th>Info</th>
                                 <th>Address</th>
                                 <th>Number</th>
-                                <th>Meal Update</th>
-                                <th>Status</th>
-                                <th>Payment</th>
-                                <th>Edit</th>
+                                <th>Meal Status</th>
+                                <th>Balance Status</th>
+                                <th>Totla Meal</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody class="tbodyC ">
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
+                                <td class="name ">
+                                    <p>Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOn ">ON</span></td>
                                 <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square " title="Edit"></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
+                                <td class="name ">
+                                    <p>Md Jonaed Ali Shuvro</p>
+                                    <p>01728723881</p>
+                                </td>
                                 <td class="addr ">Belder Para, Sattar Ludge</td>
                                 <td class="phone ">01728723881</td>
                                 <td class="mOO "><span class="mealOff ">Off</span></td>
                                 <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
+                                <td class="tMeal ">50</td>
+                                <td class="edit ">
+                                    <a href=""><i class="fa-sharp fa-solid fa-pen-to-square "></i></a>
+                                    <a href="orderHistory.html"><i class="fa-solid fa-clock-rotate-left" title="Order History"></i></a>
+                                </td>
                             </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">ON</span></td>
-                                <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Off</span></td>
-                                <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">ON</span></td>
-                                <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Off</span></td>
-                                <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">ON</span></td>
-                                <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Off</span></td>
-                                <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Md Jonaed Ali Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">ON</span></td>
-                                <td class="statC "><span class="s-plus ">100+</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
-                            <tr>
-                                <td class="id ">adfyeeefudk</td>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Off</span></td>
-                                <td class="statC "><span class="s-minus ">100-</span></td>
-                                <td class="payment ">Cash</td>
-                                <td class="edit "> <a href="# "><i class="fa-sharp fa-solid fa-pen-to-square "></i></a></td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>

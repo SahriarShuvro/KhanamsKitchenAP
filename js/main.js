@@ -79,3 +79,21 @@
         }
     }
 }
+
+// Expand
+{
+    let epandDO = document.getElementById('epandDO');
+    let epandDC = document.getElementById('epandDC');
+    let expandID = document.getElementById('expandID');
+
+    epandDC.addEventListener('click', () => {
+        expandID.classList.toggle('expandID');
+        epandDO.classList.toggle('epandDO');
+        epandDC.classList.toggle('epandDC');
+    })
+    epandDO.addEventListener('click', () => {
+        expandID.classList.toggle('expandID');
+        epandDC.classList.toggle('epandDC');
+        epandDO.classList.toggle('epandDO');
+    })
+}

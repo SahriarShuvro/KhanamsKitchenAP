@@ -68,7 +68,7 @@
                     <nav id="menuBarActive">
                         <ul class="tabs">
                             <li class="tab is-active">
-                                <a data-switcher data-tab="1" href="./add.html">Add</a>
+                                <a data-switcher data-tab="1" href="./add.html" style="background:#2e130d;">Add</a>
                             </li>
                             <li class="tab">
                                 <a data-switcher data-tab="2" href="./browseall.html">Browse All</a>
@@ -85,28 +85,68 @@
             <a href="order.html">Order</a>
         </div>
         <div class="mein-cntn" id="mainCntn">
-            <div class="contentTop">
-                <div class="coustomer">
-                    <i class="fa-solid fa-people-group coustomer"></i>
-                    <div class="lable">
-                        <p>Customers</p>
-                        <p>100</p>
-                    </div>
-                </div>
-                <div class="total-meal">
+            <button class="openD" id="epandDO">Expand Details</button>
+            <button class="clsD" id="epandDC">Close Details</button>
+            <div class="contentTop " id="expandID">
+                <div class="meal total-meal ">
                     <i class="fa-solid fa-bowl-food total-meal"></i>
-                    <div class="lable">
+                    <div class="lable ">
                         <p>Total Meal</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-lunch ">
+                    <i class="fa-solid fa-sun meal-lunch"></i>
+                    <div class="lable ">
+                        <p>Lunch</p>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="meal meal-dinner ">
+                    <i class="fa-regular fa-moon meal-dinner"></i>
+                    <div class="lable ">
+                        <p>Dinner</p>
                         <p>100</p>
                     </div>
                 </div>
-                <div class="profit">
-                    <i class="fa-solid fa-sack-dollar profit"></i>
-                    <div class="lable">
-                        <p>Profit</p>
+                <div class="meal meal-normal ">
+                    <i class="fa-solid fa-bowl-rice meal-normal"></i>
+                    <div class="lable ">
+                        <p>Normal Meal</p>
+                        <p>90</p>
+                    </div>
+                </div>
+                <div class="meal meal-special ">
+                    <i class="fa-solid  fa-drumstick-bite meal-special"></i>
+                    <div class="lable ">
+                        <p>Special Meal</p>
+                        <p>10</p>
+                    </div>
+                </div>
+                <div class="meal meal-Customized ">
+                    <i class="fa-solid fa-stroopwafel meal-Customized"></i>
+                    <div class="lable ">
+                        <p>Customized Meal</p>
                         <p>100</p>
                     </div>
                 </div>
+                <!-- <div class="coustomer ">
+                                <i class="fa-solid fa-people-group coustomer"></i>
+                                <div class="lable ">
+                                    <p>Customers</p>
+                                    <p>100</p>
+                                </div>
+                            </div>
+                            <div class="profit ">
+                                <i class="fa-solid fa-sack-dollar profit "></i>
+                                <div class="lable ">
+                                    <p>Profit</p>
+                                    <p>100</p>
+                                </div>
+                            </div> -->
+            </div>
+            <div class="mainCNTN" style="min-height: 400px;">
+
             </div>
             <!-- <div class="pendingOrSec">
                 <div class="pendingOr">

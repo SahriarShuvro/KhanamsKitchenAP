@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Date Ranger Peeker  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 
 <body>
@@ -70,7 +76,7 @@
                     <nav id="menuBarActive">
                         <ul class="tabs">
                             <li class="tab is-active">
-                                <a data-switcher data-tab="1" href="./add.html">Add</a>
+                                <a data-switcher data-tab="1" href="./add.html" style="background:#2e130d;">Add</a>
                             </li>
                             <li class="tab">
                                 <a data-switcher data-tab="2" href="./browseall.html">Browse All</a>
@@ -87,43 +93,45 @@
             <a href=" order.html ">Order</a>
         </div>
         <div class="mein-cntn " id="mainCntn ">
-            <div class="contentTop ">
-                <div class="total-meal ">
+            <button class="openD" id="epandDO">Expand Details</button>
+            <button class="clsD" id="epandDC">Close Details</button>
+            <div class="contentTop " id="expandID">
+                <div class="meal total-meal ">
                     <i class="fa-solid fa-bowl-food total-meal"></i>
                     <div class="lable ">
                         <p>Total Meal</p>
                         <p>50</p>
                     </div>
                 </div>
-                <div class="meal-lunch ">
+                <div class="meal meal-lunch ">
                     <i class="fa-solid fa-sun meal-lunch"></i>
                     <div class="lable ">
                         <p>Lunch</p>
                         <p>50</p>
                     </div>
                 </div>
-                <div class="meal-dinner ">
+                <div class="meal meal-dinner ">
                     <i class="fa-regular fa-moon meal-dinner"></i>
                     <div class="lable ">
                         <p>Dinner</p>
                         <p>100</p>
                     </div>
                 </div>
-                <div class="meal-normal ">
+                <div class="meal meal-normal ">
                     <i class="fa-solid fa-bowl-rice meal-normal"></i>
                     <div class="lable ">
                         <p>Normal Meal</p>
                         <p>90</p>
                     </div>
                 </div>
-                <div class="meal-special ">
+                <div class="meal meal-special ">
                     <i class="fa-solid  fa-drumstick-bite meal-special"></i>
                     <div class="lable ">
                         <p>Special Meal</p>
                         <p>10</p>
                     </div>
                 </div>
-                <div class="meal-Customized ">
+                <div class="meal meal-Customized ">
                     <i class="fa-solid fa-stroopwafel meal-Customized"></i>
                     <div class="lable ">
                         <p>Customized Meal</p>
@@ -158,371 +166,337 @@
                             <h1>Dinner</h1>
                         </div>
                     </div>
-                    <table class="cust tableLunchC" id="tableLunch">
-                        <thead>
-                            <tr>
-                                <th>Neme</th>
-                                <th>Address</th>
-                                <th>Number</th>
-                                <th>Package</th>
-                                <th>Quantity</th>
-                                <th>Note</th>
-                            </tr>
-                        </thead>
-                        <tbody class="tbodyC ">
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="cust tableDinnerC" id="tableDinner">
-                        <thead>
-                            <tr>
-                                <th>Neme</th>
-                                <th>Address</th>
-                                <th>Number</th>
-                                <th>Package</th>
-                                <th>Quantity</th>
-                                <th>Note</th>
-                            </tr>
-                        </thead>
-                        <tbody class="tbodyC ">
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                <td class="mOO "><span class="mealOn ">2</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
-                            <tr>
-                                <td class="name ">Shuvro</td>
-                                <td class="addr ">Belder Para, Sattar Ludge</td>
-                                <td class="phone ">01728723881</td>
-                                <td class="mOO "><span class="mealOff ">Special</span></td>
-                                <td class="mOO "><span class="mealOff ">1</span></td>
-                                <td class="payment ">Note</td>
-                            </tr>
 
-                        </tbody>
-                    </table>
+                    <div id="html2pdf">
+                        <div class="filters">
+                            <div class="datepeeker">
+                                <input type="text" name="daterange" value="Today" />
+                            </div>
+                            <div class="packageM">
+                                <select name="package" id="packageM">
+                                    <option value="" selected="selected">--Select Package--</option>
+                                    <option value="1">Student Meal 1</option>
+                                    <option value="2">Student Meal 2</option>
+                                </select>
+                            </div>
+                            <div class="menuM">
+                                <select name="package" id="packageM">
+                                    <option value="" selected="selected">--Lunch or Dinner--</option>
+                                    <option value="1">Lunch</option>
+                                    <option value="2">Dinner</option>
+                                </select>
+                            </div>
+                            <div class="search">
+                                <input type="search" name="search" id="searchMcu" placeholder="Search for Customer...">
+                            </div>
+                            <div class="scrh" style="cursor: pointer;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="btnMeal">
+                                <button type="exportPDF" id="exportPDF">PDF</button>
+                            </div>
+                        </div>
+                        <table class="tblhead" id="tableLunch">
+                            <thead>
+                                <tr>
+                                    <th>SL</th>
+                                    <th>Info</th>
+                                    <th>Address</th>
+                                    <th>Package</th>
+                                    <th>Quantity</th>
+                                    <th>Note</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbodyC ">
+                                <tr>
+                                    <td class="sl">1</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">2</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">1</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">2</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">1</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">2</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">1</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">2</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">1</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="sl">2</td>
+                                    <td class="name ">
+                                        <p>Shuvro</p>
+                                        <p>017128723881</p>
+                                    </td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <table class="tblheadD" id="tableDinner">
+                            <thead>
+                                <tr>
+                                    <th>Neme</th>
+                                    <th>Address</th>
+                                    <th>Number</th>
+                                    <th>Package</th>
+                                    <th>Quantity</th>
+                                    <th>Note</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbodyC ">
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOn ">Normal</span></td>
+                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                                <tr>
+                                    <td class="name ">Shuvro</td>
+                                    <td class="addr ">Belder Para, Sattar Ludge</td>
+                                    <td class="phone ">01728723881</td>
+                                    <td class="mOO "><span class="mealOff ">Special</span></td>
+                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="tMeal ">Note</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -546,37 +520,25 @@
     <!-- Footer Section End -->
 
     <script src="js/main.js "></script>
+    <script src="js/meal.js "></script>
     <script>
-        let sun = document.getElementById('mealLunch')
-        let moon = document.getElementById('mealDinner')
-        let sunIcon = document.getElementById('sunIcon');
-        let moonIcon = document.getElementById('moonIcon');
-        let dark = document.getElementById('dark');
-        let liH1 = document.getElementById('liH1');
-        let tableLunch = document.getElementById('tableLunch');
-        let tableDinner = document.getElementById('tableDinner');
-
-        sun.addEventListener('click', function() {
-            moon.classList.toggle('activeMoon')
-            sun.classList.toggle('activeSun')
-            sunIcon.classList.toggle('sunIcon')
-            moonIcon.classList.toggle('moonIcon')
-            dark.classList.toggle('dark')
-            liH1.classList.toggle('liH1')
-            tableLunch.classList.toggle('tableLunch')
-            tableDinner.classList.toggle('tableDinner')
-        })
-        moon.addEventListener('click', function() {
-            sun.classList.toggle('activeSun')
-            moon.classList.toggle('activeMoon')
-            sunIcon.classList.toggle('sunIcon')
-            moonIcon.classList.toggle('moonIcon')
-            dark.classList.toggle('dark')
-            liH1.classList.toggle('liH1')
-            tableLunch.classList.toggle('tableLunch')
-            tableDinner.classList.toggle('tableDinner')
-        })
+        let lunchActive = document.getElementById("tableLunch");
+        let dinnerActive = document.getElementById("tableDinner");
+        let date = new Date()
+        let time = date.getHours();
+        console.log(time);
+        () => {
+            if (time > 14) {
+                lunchActive.setAttribute('display', 'none');
+                dinnerActive.removeAttribute('display', 'inline-block')
+            } else {
+                dinnerActive.setAttribute('display', 'none');
+                lunchActive.removeAttribute('display', 'inline-block')
+            }
+        }
     </script>
+
+
 </body>
 
 </html>
