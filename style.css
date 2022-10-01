@@ -13,6 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
 
 /* Font Area End */
 
@@ -237,7 +238,7 @@ body {
 .menubar a {
     font-size: 12px;
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
     padding: 13px 5px;
     height: auto;
     background: #453734;
@@ -386,17 +387,6 @@ body {
     width: 155px;
 }
 
-.contentTop {
-    color: #f1f1f1 !important;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
-    padding: 2%;
-}
-
 .openD {
     padding: 0 !important;
     font-size: 14px;
@@ -443,55 +433,57 @@ body {
     padding: 15px !important;
 }
 
-.expandID .meal {
-    width: 30% !important;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 18px !important;
-    font-weight: bold;
-    color: #a3a3a3;
-    margin: 10px !important;
-    height: auto !important;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-
-.expandID .meal div {
-    width: 100%;
-    background: #fff;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 18px !important;
-    font-weight: bold;
-    color: #a3a3a3;
-    margin: 10px !important;
-    height: auto !important;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-
 .contentTop div {
-    width: 0;
-    font-size: 0;
-    margin: 0;
+    background: #fff;
+    height: 81px;
+    width: 30%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 18px !important;
+    font-weight: bold;
+    color: #a3a3a3;
+    margin: 10px !important;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.contentTop {
+    overflow: hidden;
+    color: #f1f1f1 !important;
     height: 0;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: 1;
+}
+
+.expandID {
+    height: 325px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.mainCNTN {
+    min-height: 400px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 3px;
 }
 
 .coustomer {
@@ -537,6 +529,8 @@ body {
 .lable {
     flex-direction: column;
     padding: 10px 20px;
+    width: 100% !important;
+    height: 84% !important;
 }
 
 .fa-moon,
@@ -557,8 +551,8 @@ body {
     -o-transition: 0.3s;
 }
 
-.expandID div i {
-    font-size: 60px;
+.contentTop div i {
+    font-size: 45px;
     color: #fff;
     padding: 18px;
     transition: 0.3s;
@@ -1313,6 +1307,12 @@ a {
     padding: 0 16%;
 }
 
+.mainCNTNbAll {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Add Meal Menu Section End */
 
@@ -1587,7 +1587,20 @@ a {
 }
 
 .addr {
-    width: 30%;
+    width: 21%;
+}
+
+.addr2 {
+    width: 50%;
+}
+
+.info {
+    width: 10% !important;
+}
+
+.l-Info,
+.d-Info {
+    width: 20% !important;
 }
 
 .phone {
@@ -1603,10 +1616,22 @@ a {
 }
 
 .tMeal {
-    width: 25%;
+    width: 15%;
     color: red;
     font-weight: bold;
     font-size: 16px !important;
+}
+
+.note {
+    background: #e1e2e3;
+    width: 100%;
+    height: auto;
+    font-size: 11px;
+    line-height: 1.1;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-family: 'Baloo Da 2', cursive;
 }
 
 .edit {
@@ -1668,8 +1693,234 @@ a {
     color: #453734;
 }
 
+.addLunch {
+    color: #000;
+    font-size: 9px;
+    font-weight: bold;
+    background: #efe8e8;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+
+.addDinner {
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    background: #000;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+
+.both {
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    background: #f47207;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+
+.l,
+.d {
+    margin: 7px 0;
+}
+
 
 /* Customer Section End */
+
+
+/* Check  */
+
+.checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.wrapper {
+    width: 150px;
+    margin: 0;
+}
+
+.checkbox input[type=radio],
+.checkbox input[type=checkbox] {
+    display: none;
+}
+
+.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #f3ecec;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+    border-radius: 8px;
+}
+
+.checkbox label {
+    margin-bottom: 10px;
+}
+
+.checkbox label:before {
+    border-radius: 3px;
+}
+
+.checkbox input[type=radio]:checked+label:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.checkbox input[type=checkbox]:checked+label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #fb0c0c;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+/* Check  */
+
+
+/* Check  */
+
+.checkbox2 label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.wrapper2 {
+    width: 150px;
+    margin: 0;
+}
+
+.checkbox2 input[type=radio],
+.checkbox2 input[type=checkbox] {
+    display: none;
+}
+
+.checkbox2 label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #f3ecec;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+    border-radius: 8px;
+}
+
+.checkbox2 label {
+    margin-bottom: 10px;
+}
+
+.checkbox2 label:before {
+    border-radius: 3px;
+}
+
+.checkbox2 input[type=radio]:checked+label:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.checkbox2 input[type=checkbox]:checked+label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #fb0c0c;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+/* Check  */
+
+.checkbox label,
+.checkbox2 label {
+    font-weight: bold;
+    color: #7e01d1;
+}
+
+.checkBox {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* Customer Profile  */
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+
+/* Customer Profile End */
 
 
 /* footer section Start  */
@@ -1815,11 +2066,57 @@ main {
 
 .price {
     font-size: 24px;
-    width: 15% !important;
+    width: 8% !important;
 }
 
 .price2 {
     font-size: 24px;
+}
+
+.PmathodeB {
+    background: #ff0093;
+}
+
+.PmathodeR {
+    background: #8f02ba;
+}
+
+.PmathodeN {
+    background: #ff0000;
+}
+
+.PmathodeC {
+    background: #01a043;
+}
+
+.PmathodeB,
+.PmathodeR,
+.PmathodeN,
+.PmathodeC {
+    font-size: 9px;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px;
+    width: 54%;
+    border-radius: 3px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.recived {
+    font-weight: bold;
+    font-size: 8px;
+    color: gray;
+}
+
+.delivered {
+    font-weight: bold;
+    font-size: 8px;
+    color: #379a0f;
 }
 
 .date {
@@ -1993,6 +2290,19 @@ main {
         font-size: 10px;
         display: flex;
     }
+    .contentTop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .expandID {
+        height: 900px;
+    }
+    .contentTop div {
+        font-size: 13px;
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -2008,9 +2318,6 @@ main {
     .fa-bowl-food,
     .fa-sack-dollar {
         font-size: 40px;
-    }
-    .contentTop div {
-        font-size: 13px;
     }
     .cust {
         width: 100% !important;
