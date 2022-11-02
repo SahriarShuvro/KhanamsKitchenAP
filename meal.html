@@ -17,6 +17,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
     <style>
         td a {
             text-decoration: none;
@@ -96,6 +97,7 @@
             </div>
             <a href="coustomer.html">Customers</a>
             <a href="meal.html" style="background: #8d726c;">Meal</a>
+            <a href="deposit.html">Deposit</a>
             <a href=" order.html ">Order</a>
         </div>
         <div class="mein-cntn " id="mainCntn ">
@@ -144,20 +146,6 @@
                         <p>100</p>
                     </div>
                 </div>
-                <!-- <div class="coustomer ">
-                    <i class="fa-solid fa-people-group coustomer"></i>
-                    <div class="lable ">
-                        <p>Customers</p>
-                        <p>100</p>
-                    </div>
-                </div>
-                <div class="profit ">
-                    <i class="fa-solid fa-sack-dollar profit "></i>
-                    <div class="lable ">
-                        <p>Profit</p>
-                        <p>100</p>
-                    </div>
-                </div> -->
             </div>
             <!-- Body Secetion start  -->
             <div class="bodySectioS ">
@@ -200,9 +188,11 @@
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                             <div class="btnMeal">
-                                <button type="exportPDF">PDF</button>
+                                <button type="exportPDF" id="editor">PDF</button>
                             </div>
                         </div>
+
+                        <!-- Lunch Table  -->
                         <table class="tblhead" id="tableLunch">
                             <thead>
                                 <tr>
@@ -223,7 +213,16 @@
                                     </td>
                                     <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                     <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="mOO">
+                                        <nav class="LunchQuantity">
+                                            <p class="LunchTitle">Lunch</p>
+                                            <p class="LunchNumber">1</p>
+                                        </nav>
+                                        <nav class="DinnerQuantity">
+                                            <p class="DinnerTitle">Lunch</p>
+                                            <p class="DinnerNumber">1</p>
+                                        </nav>
+                                    </td>
                                     <td class="tMeal">
                                         <p class="note">প্রতিষ্ঠানটি নিজেই একটি অত্যন্ত সফল কোম্পানি। সবচেয়ে স্থিতিস্থাপক অসুবিধাগুলি, যদিও তারা সুবিধা হতে পারে, শ্রমের আনন্দের ফলাফল কিন্তু তিনি এসবের চাটুকারিতা থেকে পালাতে ঘৃণা করেন, কিন্তু উপস্থিতদের নিছক ফ্লাইট বিকল্প,
                                             এবং ঐ জিনিস!</p>
@@ -237,7 +236,16 @@
                                     </td>
                                     <td class="addr ">Belder Para, Sattar Ludge</td>
                                     <td class="mOO "><span class="mealOff ">Special</span></td>
-                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="mOO">
+                                        <nav class="LunchQuantity">
+                                            <p class="LunchTitle">Lunch</p>
+                                            <p class="LunchNumber">1</p>
+                                        </nav>
+                                        <nav class="DinnerQuantity">
+                                            <p class="DinnerTitle">Lunch</p>
+                                            <p class="DinnerNumber">1</p>
+                                        </nav>
+                                    </td>
                                     <td class="tMeal ">
                                         <p class="note">Note</p>
                                     </td>
@@ -246,6 +254,7 @@
                             </tbody>
                         </table>
 
+                        <!-- Dinner Table  -->
                         <table class="tblheadD" id="tableDinner">
                             <thead>
                                 <tr>
@@ -266,7 +275,16 @@
                                     </td>
                                     <td class="addr ">Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge Belder Para, Sattar Ludge</td>
                                     <td class="mOO "><span class="mealOn ">Normal</span></td>
-                                    <td class="mOO "><span class="mealOn ">1</span></td>
+                                    <td class="mOO">
+                                        <nav class="LunchQuantity">
+                                            <p class="LunchTitle">Lunch</p>
+                                            <p class="LunchNumber">1</p>
+                                        </nav>
+                                        <nav class="DinnerQuantity">
+                                            <p class="DinnerTitle">Lunch</p>
+                                            <p class="DinnerNumber">1</p>
+                                        </nav>
+                                    </td>
                                     <td class="tMeal ">
                                         <p class="note">orem ipsum dolor sit amet consectetur adipisicing elit. Quam similique itaque, consequuntur neque dicta officiis corporis obcaecati accusantium eveniet fugiat numquam deleniti incidunt quasi tenetur? Mollitia quaerat
                                             sunt ut aliquam!</p>
@@ -280,7 +298,16 @@
                                     </td>
                                     <td class="addr ">Belder Para, Sattar Ludge</td>
                                     <td class="mOO "><span class="mealOff ">Special</span></td>
-                                    <td class="mOO "><span class="mealOff ">2</span></td>
+                                    <td class="mOO">
+                                        <nav class="LunchQuantity">
+                                            <p class="LunchTitle">Lunch</p>
+                                            <p class="LunchNumber">1</p>
+                                        </nav>
+                                        <nav class="DinnerQuantity">
+                                            <p class="DinnerTitle">Lunch</p>
+                                            <p class="DinnerNumber">1</p>
+                                        </nav>
+                                    </td>
                                     <td class="tMeal  ">
                                         <p class="note">Note</p>
                                     </td>
@@ -311,7 +338,9 @@
         </div>
     </div>
     <!-- Footer Section End -->
-
+    <!-- PDF  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <script src="js/main.js "></script>
     <script src="js/meal.js "></script>
     <script>
@@ -329,6 +358,23 @@
                 }
             }
         }
+    </script>
+    <script type="text/javascript">
+        var doc = new jsPDF();
+        var specialElementHandlers = {
+            '#editor': function(element, renderer) {
+                return true;
+            }
+        };
+
+
+        $('#generatePDF').click(function() {
+            doc.fromHTML($('#htmlContent').html(), 15, 15, {
+                'width': 700,
+                'elementHandlers': specialElementHandlers
+            });
+            doc.save('sample_file.pdf');
+        });
     </script>
 
 

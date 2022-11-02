@@ -30,12 +30,7 @@
     })
 }
 
-{
-    let htmlPDF = document.getElementById("html2pdf");
-    let exportPDF = document.getElementById("exportPDF");
-    exportPDF.onclick = (e) => html2pdf(htmlPDF);
-}
-
+// Date Range Picker
 {
     $(function() {
         $('input[name="daterange"]').daterangepicker({

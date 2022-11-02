@@ -169,6 +169,11 @@ body {
     position: absolute;
 }
 
+.adminMenu2 {
+    height: 0;
+    padding: 0;
+}
+
 
 /* call & Sing In Seection end */
 
@@ -331,7 +336,7 @@ body {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .menuToglActive2 {
@@ -471,7 +476,7 @@ body {
 }
 
 .expandID {
-    height: 325px;
+    height: 400px;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -1212,6 +1217,13 @@ a {
 }
 
 
+/* Browse All Page Style Start  */
+
+.subCNTN {
+    padding: 20px;
+}
+
+
 /* Add Meal Menu Section Start  */
 
 .panel {
@@ -1506,8 +1518,18 @@ a {
 .cust {
     background: #fff;
     margin-top: 20px;
-    border-bottom: 4px solid green;
+    border-bottom: 4px solid #d1d0d0;
     border-radius: 11px 11px 0 0;
+}
+
+.depositTh {
+    border-bottom: 4px solid #d1d0d0 !important;
+}
+
+.depositTh thead {
+    background: #d1d0d0 !important;
+    color: #000 !important;
+    font-family: 'Exo 2', sans-serif !important;
 }
 
 .cust table {
@@ -1534,16 +1556,111 @@ a {
     vertical-align: middle;
     border-color: inherit;
     font-family: 'Merriweather', serif;
-    background: green;
-    color: #fff;
+    background: #d1d0d0;
+    color: #000;
+}
+
+.paymentMathod {
+    width: 7%;
+}
+
+.depositTh thead tr th {
+    width: 45%;
+    text-align: center;
 }
 
 .cust thead tr th {
     padding: 20px 12px;
 }
 
+.browsAllTbl thead tr th {
+    width: 15%;
+}
+
+.browsAllTbl thead tr th:first-child {
+    width: 5%;
+}
+
+.gradeX {
+    font-weight: bold;
+}
+
+.photo_preview .thumbview ul li .thumb {
+    width: 142px;
+}
+
+.photo_preview .thumbview ul li {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.photo_preview .thumbview ul li .thumb img {
+    cursor: auto;
+    width: 100%;
+    height: 107px;
+}
+
+.gallery .thumbview .thumb {
+    -moz-border-radius: 3px;
+    -webit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 2px #ddd;
+    position: relative;
+}
+
+.gallery .thumbview .thumb {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #fcfcfc;
+    -moz-box-shadow: 1px 1px 2px #ddd;
+    box-shadow: 1px 1px 2px #ddd;
+    overflow: hidden;
+}
+
+.btn-info {
+    background-color: #58c9f3;
+    border-color: #58c9f3;
+    color: #FFFFFF;
+}
+
+.btn-info {
+    background-color: #58c9f3;
+    border-color: #58c9f3;
+    color: #FFFFFF;
+}
+
+.tools .btn-info {
+    color: #fff;
+}
+
+.pull-right {
+    float: right !important;
+    margin-right: 5px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    font-weight: bold;
+}
+
+.auth_info_name a {
+    font-weight: bold;
+    font-size: 14px;
+}
+
 .rowGap {
     height: 15px;
+}
+
+#searchMcu {
+    cursor: text;
 }
 
 .b-tbl-s {
@@ -1725,6 +1842,48 @@ a {
     margin: 7px 0;
 }
 
+.LunchQuantity {
+    background: #ff9901d4;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #000;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.LunchNumber {
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #390101;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.DinnerNumber {
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #390101;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.DinnerQuantity {
+    background: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 
 /* Customer Section End */
 
@@ -1876,7 +2035,137 @@ a {
 }
 
 
+/* Deposit Section Start  */
+
+.btn-secondary {
+    color: #fff;
+    background-color: #bec3c7 !important;
+    border-color: #bec3c7 !important;
+}
+
+.reject {
+    color: #fff;
+    background-color: #f35858 !important;
+    border-color: #f35858 !important;
+}
+
+.reject:focus {
+    box-shadow: 0 0 0 0.2rem rgb(243 88 88 / 50%) !important;
+}
+
+.approve {
+    background-color: #58c9f3 !important;
+    border-color: #58c9f3 !important;
+}
+
+.approve:focus {
+    box-shadow: 0 0 0 0.2rem rgb(88 201 243 /50%) !important;
+}
+
+.depositSection {}
+
+.depositMenu {
+    padding: 0 20px;
+    font-size: 12px;
+    width: 100% !important;
+}
+
+
+/* Deposit Section End */
+
+
 /* Customer Profile  */
+
+
+/* No Fish Check  */
+
+
+/* Style For No Fish Checke box  */
+
+.css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+#inputPreview {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.css-checkbox+label {
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    color: rgb(0, 0, 0);
+}
+
+.css-checkbox+label::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.css-checkbox:checked+label::after {
+    content: " ";
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTIgNTEyIj48cGF0aCBmaWxsPSIiIGQ9Ik0yNDIuNzIgMjU2bDEwMC4wNy0xMDAuMDdjMTIuMjgtMTIuMjggMTIuMjgtMzIuMTkgMC00NC40OGwtMjIuMjQtMjIuMjRjLTEyLjI4LTEyLjI4LTMyLjE5LTEyLjI4LTQ0LjQ4IDBMMTc2IDE4OS4yOCA3NS45MyA4OS4yMWMtMTIuMjgtMTIuMjgtMzIuMTktMTIuMjgtNDQuNDggMEw5LjIxIDExMS40NWMtMTIuMjggMTIuMjgtMTIuMjggMzIuMTkgMCA0NC40OEwxMDkuMjggMjU2IDkuMjEgMzU2LjA3Yy0xMi4yOCAxMi4yOC0xMi4yOCAzMi4xOSAwIDQ0LjQ4bDIyLjI0IDIyLjI0YzEyLjI4IDEyLjI4IDMyLjIgMTIuMjggNDQuNDggMEwxNzYgMzIyLjcybDEwMC4wNyAxMDAuMDdjMTIuMjggMTIuMjggMzIuMiAxMi4yOCA0NC40OCAwbDIyLjI0LTIyLjI0YzEyLjI4LTEyLjI4IDEyLjI4LTMyLjE5IDAtNDQuNDhMMjQyLjcyIDI1NnoiLz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    left: -2px;
+    top: 0px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 10px;
+    height: 36px;
+    width: 36px;
+}
+
+.noFishTxt {
+    font-size: 30px !important;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.noFish {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fishRadio {
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.fishRadio {
+    margin-right: 5px;
+    margin-top: 20px;
+}
 
 .form-control:focus {
     box-shadow: none;
@@ -1945,6 +2234,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0;
 }
 
 .tabs .tab {
@@ -2001,7 +2291,7 @@ main {
     width: 20%;
     background: #a09c9c;
     border-radius: 20px !important;
-    padding: 5px;
+    padding: 2px;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     -ms-border-radius: 1px;
@@ -2157,22 +2447,24 @@ main {
     flex-direction: column;
     background: #fff;
     margin-top: 20px;
-    border-bottom: 4px solid green;
+    border-bottom: 4px solid #d1d0d0;
     border-radius: 11px 11px 0 0;
     padding: 10px;
 }
 
-.tblhead {}
+#html2pdf .tblhead thead tr th {
+    color: #000 !important;
+}
 
 .tblhead thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
     font-family: 'Merriweather', serif;
-    background: green;
-    color: #fff;
+    background: #d1d0d0;
+    color: #000;
     margin-top: 20px;
-    border-bottom: 4px solid green;
+    border-bottom: 4px solid #d1d0d0;
     border-radius: 11px 11px 0 0;
 }
 

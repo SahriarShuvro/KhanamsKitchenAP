@@ -3,8 +3,12 @@
     let singTogl = document.getElementById('sing-in');
     let adDrop = document.getElementById('adDrop');
 
-    singTogl.addEventListener('click', function() {
+    singTogl.addEventListener('click', () => {
         adDrop.classList.toggle('adminMenu');
+    })
+    document.addEventListener('click', event => {
+        if (event.target.closest('#sing-in')) return
+        adDrop.classList.remove('adminMenu');
     })
 }
 

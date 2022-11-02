@@ -81,8 +81,9 @@
                 </nav>
             </div>
             <a href="coustomer.html ">Coustomer</a>
-            <a href="meal.html ">Meal</a>
-            <a href="order.html ">Order</a>
+            <a href="meal.html">Meal</a>
+            <a href="deposit.html">Deposit</a>
+            <a href="order.html">Order</a>
         </div>
         <div class="mainCNTNbAll" style="display: flex;flex-direction: column;">
             <button class="openD" id="epandDO">Expand Details</button>
@@ -130,20 +131,68 @@
                         <p>100</p>
                     </div>
                 </div>
-                <!-- <div class="coustomer ">
-                                        <i class="fa-solid fa-people-group coustomer"></i>
-                                        <div class="lable ">
-                                            <p>Customers</p>
-                                            <p>100</p>
-                                        </div>
+            </div>
+
+            <div class="subCNTN">
+                <table class="cust depositTh browsAllTbl">
+                    <thead>
+                        <tr>
+                            <th><input name="order_status[]" type="checkbox" class="checkBoxClass" value="1"></th>
+                            <th>Meal Info</th>
+                            <th>Total Order</th>
+                            <th>Option</th>
+                            <th>Availability</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyC ">
+                        <tr class="gradeX">
+                            <td><input name="order_status[]" type="checkbox" class="checkBoxClass" value="1"></td>
+                            <td class="text-left" style="text-align: left">
+                                <div class="pull-left">
+                                    <div class="auth_pic">
+                                        <a href="">
+                                            <img style="width: 60px; height:60px;" src="/Admin Pannel/img/logo.jpg" alt="" class="img-thumbnail uth_profile_img donner-profile-thumb img-responsive">
+                                        </a>
                                     </div>
-                                    <div class="profit ">
-                                        <i class="fa-solid fa-sack-dollar profit "></i>
-                                        <div class="lable ">
-                                            <p>Profit</p>
-                                            <p>100</p>
-                                        </div>
-                                    </div> -->
+                                </div>
+                                <div class="pull-left">
+                                    <div class="auth_info">
+                                        <span class="auth_info_name">
+                                            <a href="menuSummary.html">Student Meal</a>
+                                        </span><br>
+                                        <span class="auth_info_contact_info">
+                                            Price : ৳&nbsp;280
+                                            <br>Category : Set Menu <br>Min Order Qty : 1
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </td>
+                            <td class="text-center">41 </td>
+
+                            <td class="text-center">
+                                <span class="action label label-danger" style="margin: 5px;">Free Delivery</span><span class="action label label-danger" style="margin: 5px;">Is get
+                                    free</span><br><br><span class="action label label-danger" style="margin: 5px;">Special Delivery</span>
+                                <span class="action label label-danger" style="margin: 5px;">Featured</span><br><br><span class="action label label-danger" style="margin: 5px;">Offer</span><span class="action label label-danger" style="margin: 5px;">Trending</span><br><br>
+                                <span class="action label label-danger" style="margin: 5px;">Top Snacks
+                                </span><span class="action label label-danger" style="margin: 5px;">Dynamic Home</span>
+                            </td>
+                            <td class="text-center">
+                                <span class="label label-success">Yes</span>
+                            </td>
+
+                            <td class="text-center">
+                                <span class="action label label-danger">Inactive</span>
+                            </td>
+                            <td class="">
+                                <a class="btn btn-success btn-xs" href="menuSummary.html"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-primary btn-xs" href="add.html"><i class="fa fa-edit"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
