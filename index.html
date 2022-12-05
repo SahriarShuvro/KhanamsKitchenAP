@@ -5,171 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Manage Meal</title>
-    <link rel="icon" href=" img/logo.jpg" type="image/png/gif" style="border-radius: 50% ;">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="shortcut icon" href="img/SSsiteIcon.png" type="image/x-icon">
+    <title>Student Square | Admin</title>
+
+    <!-- Fontawesome  -->
     <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <style>
+        .btnDashboard {
+            background: #05050559;
+            -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(10px);
+            border: 2px solid #ffffff1a;
+            box-shadow: 0 0 80px #00000033;
+            overflow: hidden;
+            color: #fff !important;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header Section  -->
-    <header class="main-container" id="sticky-header">
-        <div class="container" id="cntn-js">
-            <!-- Logo -->
-            <div class="logo-sec">
-                <a href="#" class="logo">
-                    <img src=" img/logo.jpg" alt="Khanam's Kitchen" srcset="">
+    <div class="allbody">
+        <!-- Body Heade Section  -->
+        <div class="head">
+            <!-- Logo Section  -->
+            <div class="logo">
+                <img src="./img/SS Landscape Logo.png" alt="" srcset="">
+            </div>
+            <!-- Log Out Section  -->
+            <div class="logInSection">
+                <button id="btnAdmin">Admin's Name</button>
+            </div>
+        </div>
+
+        <!-- Body Container Section  -->
+        <div class="container_s">
+            <!-- Head log-InSection -->
+            <nav class="dropDownSection">
+                <a href="#">
+                    <label for=""><i class="fa fa-circle-arrow-right"></i></label>
+                    <span>Go To Main Site</span>
                 </a>
-                <div class="hamburger" id="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </div>
-            <!-- Call & Sing In Section  -->
-            <div class="call-sing-in">
-                <!-- Sing is Section  -->
-                <div class="sing-log-pro">
-                    <div class="sing-in" id="sing-in">
-                        <nav href="" class="sing-in-btn">
-                            <span>Admin's Name</span>
+                <a href="#">
+                    <label for=""><i class="fa-solid fa-gear"></i></label>
+                    <span>Setting</span>
+                </a>
+                <a href="#">
+                    <label for=""><i class="fa-solid fa-arrow-right-from-bracket"></i></label>
+                    <span>Log Out</span>
+                </a>
+            </nav>
+
+
+            <!-- Main Container Section  -->
+            <div class="mainContainer">
+                <!-- Nav Menu Section  -->
+                <div class="navBarSection">
+                    <div class="navMenu">
+                        <!-- Blog Menu  -->
+                        <a href="index.html" class="singleMenu dashboard btnDashboard">Dashboard</a>
+                        <nav class="multipleMenu blog">
+                            <button>Blog</button>
+                            <nav class="manuExpand">
+                                <a href="b_add.html" class="singleMenu">Add</a>
+                                <a href="b_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="b_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
                         </nav>
+                        <!-- Magazine Menu  -->
+                        <nav class="multipleMenu magazine">
+                            <button>Magazine</button>
+                            <nav class="manuExpand">
+                                <a href="m_add.html" class="singleMenu">Add</a>
+                                <a href="m_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="m_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                        <!-- Inspiring Menu  -->
+                        <nav class="multipleMenu inspiring">
+                            <button>Inspiring</button>
+                            <nav class="manuExpand">
+                                <a href="i_add.html" class="singleMenu">Add</a>
+                                <a href="i_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="i_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                        <!-- Counselling Menu  -->
+                        <nav class="multipleMenu counselling">
+                            <button>Counselling</button>
+                            <nav class="manuExpand">
+                                <a href="c_add.html" class="singleMenu">Add</a>
+                                <a href="c_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="c_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                        <!-- Footer News Menu  -->
+                        <nav class="multipleMenu news">
+                            <button>News</button>
+                            <nav class="manuExpand">
+                                <a href="n_add.html" class="singleMenu">Add</a>
+                                <a href="n_browseAll.html" class="singleMenu">Browse All</a>
+                                <a href="n_catagory.html" class="singleMenu btnCatagory">Catagory</a>
+                            </nav>
+                        </nav>
+                    </div>
 
-                    </div>
-                    <div class="d-log-out" style="display: none;">
-                        <a href="signIn.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-                    </div>
-                    <div class="d-profile" style="display: none;">
-                        <a href=" dashbord.html"><i class="fa-solid fa-user"></i></a>
+                    <div class="menuIcon2">
+                        <div class="tapClose">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <!-- admin menu start  -->
-    <div class="aa-m">
-        <div class="aa0m">
-            <div class="ad-drop" id="adDrop">
-                <a href="">Go to Main Site</a>
-                <a href="">Log out</a>
+
+
+                <!-- Content Section  -->
+                <div class="contentSection">
+                    <div class="tapOpen">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="c_body">
+                        <h1>
+                            Coming Soon...
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- admin menu start  -->
-    <!-- Content Section start  -->
-    <div class="cntn-se">
-        <div class="menubar" id="menubar">
-            <a href="index.html" style="background: #8d726c;">Dashboard</a>
-            <div id="menuB">
-                <div id="d-menu">Menu</div>
-                <nav class="d-menu">
-                    <nav id="menuBarActive">
-                        <ul class="tabs">
-                            <li class="tab is-active">
-                                <a data-switcher data-tab="1" href="./add.html" style="background:#2e130d;">Add</a>
-                            </li>
-                            <li class="tab">
-                                <a data-switcher data-tab="2" href="./browseall.html">Browse All</a>
-                            </li>
-                            <li class="tab">
-                                <a data-switcher data-tab="3" href="./category.html">Category</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </nav>
-            </div>
-            <a href="coustomer.html">Customers</a>
-            <a href="meal.html">Meal</a>
-            <a href="deposit.html">Deposit</a>
-            <a href="order.html">Order</a>
-        </div>
-        <div class="mein-cntn" id="mainCntn">
-            <button class="openD" id="epandDO">Expand Details</button>
-            <button class="clsD" id="epandDC">Close Details</button>
-            <div class="contentTop " id="expandID">
-                <div class="meal total-meal ">
-                    <i class="fa-solid fa-bowl-food total-meal"></i>
-                    <div class="lable ">
-                        <p>Total Meal</p>
-                        <p>50</p>
-                    </div>
-                </div>
-                <div class="meal meal-lunch ">
-                    <i class="fa-solid fa-sun meal-lunch"></i>
-                    <div class="lable ">
-                        <p>Lunch</p>
-                        <p>50</p>
-                    </div>
-                </div>
-                <div class="meal meal-dinner ">
-                    <i class="fa-regular fa-moon meal-dinner"></i>
-                    <div class="lable ">
-                        <p>Dinner</p>
-                        <p>100</p>
-                    </div>
-                </div>
-                <div class="meal meal-normal ">
-                    <i class="fa-solid fa-bowl-rice meal-normal"></i>
-                    <div class="lable ">
-                        <p>Normal Meal</p>
-                        <p>90</p>
-                    </div>
-                </div>
-                <div class="meal meal-special ">
-                    <i class="fa-solid  fa-drumstick-bite meal-special"></i>
-                    <div class="lable ">
-                        <p>Special Meal</p>
-                        <p>10</p>
-                    </div>
-                </div>
-                <div class="meal meal-Customized ">
-                    <i class="fa-solid fa-stroopwafel meal-Customized"></i>
-                    <div class="lable ">
-                        <p>Customized Meal</p>
-                        <p>100</p>
-                    </div>
-                </div>
-                <!-- <div class="coustomer ">
-                                <i class="fa-solid fa-people-group coustomer"></i>
-                                <div class="lable ">
-                                    <p>Customers</p>
-                                    <p>100</p>
-                                </div>
-                            </div>
-                            <div class="profit ">
-                                <i class="fa-solid fa-sack-dollar profit "></i>
-                                <div class="lable ">
-                                    <p>Profit</p>
-                                    <p>100</p>
-                                </div>
-                            </div> -->
-            </div>
-            <div class="mainCNTN" style="min-height: 400px;">
-
-            </div>
-            <!-- <div class="pendingOrSec">
-                <div class="pendingOr">
-                    <h2>Pending Order - (5)</h2>
-                    <div class="penTable">
-
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </div>
-    <!-- Content Section end -->
 
 
 
-    <!-- Footer Section Start  -->
-    <div class="footer">
-        <div class="mainFooter">
-            <p>2022 © Khanam's Kitchens</p>
-        </div>
-    </div>
-    <!-- Footer Section End -->
+
+
 
     <script src="js/main.js"></script>
 </body>
